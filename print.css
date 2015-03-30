@@ -1,0 +1,45 @@
+* {
+	color: black;
+	background: transparent;
+	font-family: serif;
+}
+
+h1 {
+	font-size: 20pt;
+	color: black;
+}
+
+nav {
+	display: none;
+}
+
+section h2 {
+	font-size: 15pt;
+	color: black;
+}
+
+section h3 {
+	color: black;
+}
+
+section p {
+	color: black;
+}
+
+section ul a {
+    text-decoration: none;
+	color: black;
+}
+
+section {
+	border: 1pt solid dimgray;
+    margin: 0mm;
+	width: 73.1mm;
+	float: right;
+	font-size: 10pt;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: black;
+}

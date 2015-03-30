@@ -1,31 +1,78 @@
 body {
-	font-family: "Arial";
+	font-family: "Lato", "Arial", sans-serif;
+    background-color: rgb(255,253,237);
 }
 
-hr {
-	width: 60%;
-	border: 1;
+header {
+    margin-left: 2%;
+}
+
+header a, 
+header a:visited {
+    color: black;
 }
 
 h1 {
-	font-size: 35px;
-	text-align: center;
+	font-size: 400%;
+    margin: 0px 7px 5px 0px;
 }
 
-address {
-	text-align: center;
+#contact {
+    margin-left: 2px;
+    font-size: 18px;
 }
 
-a:hover,
-a:focus {
-	color: red;
+@media screen and (min-width : 762px) {
+    nav {
+    display: none;
+    }
 }
 
-li a:hover,
+ul {
+    line-height: 19px;
+}
+
+nav ul a:hover {
+    color: #2f2f2f;
+}
+
+h2 {
+    font-size: 200%;
+    margin-bottom: -14px;
+}
+
+section h2 {
+    font-family: "Slabo 27px", serif;
+    color: white;
+}
+
+h3 {
+    line-height: 21px;
+    margin-bottom: -8px;
+    color: white;
+}
+
+/*boxes*/
+section {
+    padding: 0px 30px 30px;
+    margin: 3px 1px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #2f2f2f;
+    color: white;
+}
+/*links in boxes*/
+section a {
+    color: white;
+}
+
+section a:hover,
 a:focus,
 a:visited{
-	color: gray;
+	color: darkgray;
 }
-.centertext {
-	text-align: center;
+/*minor corrections*/
+.phone {
+    margin-top: 1px;
 }
