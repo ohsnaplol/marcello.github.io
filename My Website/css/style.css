@@ -10,6 +10,16 @@ header {
   width: 100%;
   top: 0;
 }
+
+header a {
+  text-decoration: none;
+  background-color: rgba(50,20,20,.9);
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
 /*Centers UI elements*/
 .centerUI {
   margin-left: auto;
@@ -43,6 +53,8 @@ header nav a, a:visited {
 main {
   margin: auto;
   position: absolute;
+  width: 70%;
+  height: 490px;
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
@@ -87,6 +99,10 @@ footer li {
   float: right;
   margin-left: 40px;
   display: inline;
+}
+
+footer a, a:visited {
+  color: white;
 }
 
 #contact {
