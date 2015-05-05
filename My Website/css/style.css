@@ -9,23 +9,17 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 2
 }
 
 header a {
   text-decoration: none;
-  background-color: rgba(50,20,20,.9);
 }
 
 header a:hover {
   text-decoration: underline;
 }
 
-/*Centers UI elements*/
-.centerUI {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
 /* Marcello Galvan */
 h1 {
   margin: 0;
@@ -38,23 +32,26 @@ h1 {
 nav li {
   font-size: 18px;
   float: right;
-  margin-left: 40px;
-  display: inline;
+  margin-right: 40px;
 }
 
-ul {
-  list-style: none;
+header nav li:nth-child(4),
+footer li:nth-child(5) {
+	list-style: none;
 }
 
 header nav a, a:visited {
   color: white;
 }
+
 /*Middle*/
 main {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
   position: absolute;
-  width: 70%;
-  height: 490px;
+  width: 60%;
+  height: auto;
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
@@ -65,24 +62,51 @@ body {
   /*text color light gray*/
   color: rgb(214,214,214);
   font-family: Arial;
-  /*background image with tint*/
-  background:
-    linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)),
-    url("../img/bg.jpg");
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-/*Main*/
+/******CLASSES******/
+.centerUI {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
 .profile {
   width: 400px;
   border-radius: 100%;
   float: left;
 }
 
-#offset {
+.offset {
+  line-height: 25px;
   margin-left: 450px;
-  padding-top: 50px;
+  padding-top: 25px;
+}
+
+.videos {
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+.vidwrap {
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+  margin-bottom: 40px;
+}
+
+.vidwrap iframe {
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  border: none;
 }
 
 /*bottom portion*/
@@ -91,20 +115,99 @@ footer {
   width: 100%;
   bottom: 0;
   color: white;
-  height: auto;
-  background-color: rgb(0, 0, 0);
+  height: 100px;
+  background-color: black;
 }
 /*Social media links*/
 footer li {
   float: right;
   margin-left: 40px;
-  display: inline;
+  margin-top: 20px;
 }
 
 footer a, a:visited {
   color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h2 {
+  margin:0;
 }
 
 #contact {
   float: left;
+  margin-top:6px;
+}
+
+@media screen and (max-width: 1174px) {
+
+  header h1 {
+    font-size: 80px;
+    text-align: center;
+    line-height: 90px;
+  }
+
+  header nav li:nth-child(4),
+  footer li:nth-child(5) {
+  	list-style: none;
+  }
+
+  .centerUI {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav {
+    margin:0;
+    padding:0;
+    text-align: center;
+  }
+
+  nav li {
+    display: inline;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    margin-right: 110px;
+    font-size: 35px;
+    float: right;
+  }
+
+  main {
+    width: 80%;
+  }
+
+  .profile {
+    display: block;
+    margin: 100px auto 0px auto;
+    width: 600px;
+    border-radius: 100%;
+    float: none;
+  }
+
+  .offset {
+    font-size: 40px;
+    line-height: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .offset h2 {
+    text-align: center;
+  }
+
+  .videos {
+    margin-top: 250px;
+  }
+
+  footer {
+    height: 180px;
+    position: fixed;
+    font-size: 30px;
+  }
 }

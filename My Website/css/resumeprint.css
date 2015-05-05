@@ -1,0 +1,60 @@
+* {
+	color: black;
+	background: transparent;
+
+}
+
+header {
+	background: none;
+}
+
+header h1 {
+	margin-top: 1em;
+	font-size: 25pt;
+	margin-left: -1em;
+}
+
+
+h1 {
+	display: static;
+	font-size: 20pt;
+	color: black;
+}
+
+nav {
+	display: none;
+}
+
+section h2, h3 {
+	font-size: 15pt;
+	color: black;
+	font-family: Times;
+}
+
+
+section ul a {
+    text-decoration: none;
+	color: black;
+}
+
+section {
+	border: 1pt solid dimgray;
+  margin: 0mm;
+	width: 73mm;
+	font-size: 10pt;
+	height: auto;
+	float: left;
+}
+
+section a:visited {
+	color: black;
+}
+
+footer {
+	display: none;
+}
+
+address {
+	display: block;
+	float: right;
+}
