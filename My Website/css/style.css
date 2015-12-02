@@ -5,34 +5,34 @@ header {
   font-family: 'Playfair Display', serif;
   height: auto;
   line-height: 30px;
-  padding-bottom: 20px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 2
 }
 
-header a {
-  text-decoration: none;
-}
-
-header a:hover {
-  text-decoration: underline;
-}
-
 /* Marcello Galvan */
 h1 {
-  margin: 0;
   font-size: 40px;
   letter-spacing: 5px;
   float: left;
   text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 14px;
 }
 /*Navigation*/
 nav li {
-  font-size: 18px;
-  float: right;
+  font-size: 20px;
+  display: inline;
   margin-right: 40px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin-top: 18px;
 }
 
 header nav li:nth-child(4),
@@ -44,6 +44,13 @@ header nav a, a:visited {
   color: white;
 }
 
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
 /*Middle*/
 main {
   margin-left: auto;
@@ -56,10 +63,7 @@ main {
 }
 
 body {
-  /*Makes it so header and footer
-    touches edge of window*/
   margin: 0px 0px 0px 0px;
-  /*text color light gray*/
   color: rgb(214,214,214);
   font-family: Arial;
   background: url("../img/bg.jpg") no-repeat center center fixed;
@@ -80,7 +84,6 @@ body {
   border-radius: 100%;
   float: left;
 }
-
 .offset {
   line-height: 25px;
   margin-left: 450px;
@@ -143,12 +146,17 @@ footer h2 {
   margin-top:6px;
 }
 
-@media screen and (max-width: 1174px) {
+@media screen and (max-width: 1279px) {
+
+  #container {
+    width: 1;
+    min-width: 506px;
+  }
 
   header h1 {
-    font-size: 80px;
     text-align: center;
-    line-height: 90px;
+    margin-top: 20px;
+    float: none;
   }
 
   header nav li:nth-child(4),
@@ -163,34 +171,35 @@ footer h2 {
   }
 
   nav {
-    margin:0;
-    padding:0;
+    float: none;
+  }
+
+  nav ul {
     text-align: center;
+    width: auto;
   }
 
   nav li {
     display: inline;
-    margin-top: 35px;
-    margin-bottom: 10px;
-    margin-right: 110px;
-    font-size: 35px;
-    float: right;
+    margin-right: 40px;
   }
 
   main {
     width: 80%;
+    margin-top: 180px;
+    margin-bottom: 1000px;
   }
 
   .profile {
     display: block;
-    margin: 100px auto 0px auto;
-    width: 600px;
+    margin: 0 auto 0 auto;
+    width: 50%;
     border-radius: 100%;
     float: none;
   }
 
   .offset {
-    font-size: 40px;
+    font-size: 24px;
     line-height: 45px;
     display: block;
     margin-left: auto;
