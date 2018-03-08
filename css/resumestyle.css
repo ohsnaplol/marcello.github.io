@@ -1,0 +1,221 @@
+body {
+	font-family: "Lato", "Arial", sans-serif;
+  background-color: rgb(255,253,237);
+	margin: 70px 0 0 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  height: auto;
+  line-height: 30px;
+  padding-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+address, main nav {
+	display: none;
+}
+
+/*Centers UI elements*/
+.centerUI {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+/* Marcello Galvan */
+h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 5px;
+  float: left;
+  text-transform: uppercase;
+}
+/*Navigation*/
+header nav li {
+  font-size: 18px;
+  float: right;
+  margin-right: 40px;
+	line-height: 30px;
+}
+
+header nav li:nth-child(4) {
+	list-style: none;
+}
+
+header nav a, a:visited {
+  color: white;
+}
+
+#contact {
+    margin-left: 2px;
+    font-size: 18px;
+}
+
+ul {
+    line-height: 19px;
+}
+
+main {
+	width: 1100px;
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main nav ul a:hover {
+    color: #2f2f2f;
+}
+
+h2 {
+    font-size: 200%;
+    margin-bottom: -14px;
+}
+
+section h2 {
+    font-family: "Slabo 27px", serif;
+    color: white;
+}
+
+h3 {
+    line-height: 21px;
+    margin-bottom: -8px;
+    color: white;
+}
+
+/*boxes*/
+section {
+    padding: 0px 30px 30px;
+    margin: 3px 1px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #2f2f2f;
+    color: white;
+		height: 400px;
+}
+/*links in boxes*/
+section a {
+    color: white;
+}
+
+main a:hover,
+main a:focus,
+main a:visited{
+	color: darkgray;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+	font-family: Arial, sans-serif;
+}
+
+footer li {
+  float: right;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+footer li:nth-child(5) {
+	list-style: none;
+}
+
+footer a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h2 {
+  margin:0;
+	font-size: 24px;
+}
+
+#contact {
+	font-size: 16px;
+  float: left;
+  margin-top:6px;
+}
+
+@media screen and (max-width: 1174px) {
+	header nav li:nth-child(4),
+	footer li:nth-child(5) {
+		list-style: none;
+	}
+
+	main nav {
+		text-align: center;
+	}
+
+	main a, main nav a:visited {
+		color: black;
+	}
+
+	section{
+		height: auto;
+		width: 91%;
+	}
+
+	section ul {
+		line-height: 60px;
+	}
+
+	section a {
+		color: white;
+	}
+
+	main {
+		margin-left: 20px;
+	}
+
+  header h1 {
+		margin-left: 40px;
+    font-size: 90px;
+    text-align: center;
+    line-height: 100px;
+  }
+
+	body {
+		margin-top: 230px;
+	}
+
+  .centerUI {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header nav li {
+    display: inline;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    margin-right: 120px;
+    font-size: 40px;
+    float: right;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
