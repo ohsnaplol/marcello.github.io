@@ -148,11 +148,6 @@ footer h2 {
 
 @media screen and (max-width: 1279px) {
 
-  #container {
-    width: 1;
-    min-width: 506px;
-  }
-
   header h1 {
     text-align: center;
     margin-top: 20px;
@@ -193,7 +188,6 @@ footer h2 {
   .profile {
     display: block;
     margin: 0 auto 0 auto;
-
     border-radius: 100%;
     float: none;
   }
